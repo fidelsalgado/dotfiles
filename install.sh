@@ -11,6 +11,8 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 ln -sfv "$DOTFILES_DIR/bash_profile" ~/.bash_profile
 ln -sfv "$DOTFILES_DIR/inputrc" ~/.inputrc
 ln -sfv "$DOTFILES_DIR/gitconfig" ~/.gitconfig
+ln -sfv "$DOTFILES_DIR/vimrc" ~/.vimrc
+ln -sfv "$DOTFILES_DIR/vim" ~/.vim
 
 # Cool message
 echo "Done installing!"
