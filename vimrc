@@ -3,8 +3,8 @@ syntax on
 filetype plugin indent on
 
 "Set the background dark and the colorscheme
+colorscheme one
 set background=dark
-colorscheme distinguished
 
 "Set tabs as spaces and auto indent
 set tabstop=2
