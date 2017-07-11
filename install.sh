@@ -7,6 +7,10 @@
 # TL;DR: Gets the current directory and sets it to DOTFILES_DIR
 DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+# Install all needed commands
+brew install ag
+sh "$DOTFILES_DIR/install/fzf.sh"
+
 # Set symlinks for all dotfiles
 ln -sfv "$DOTFILES_DIR/bash_profile" ~/.bash_profile
 ln -sfv "$DOTFILES_DIR/inputrc" ~/.inputrc
@@ -15,6 +19,10 @@ ln -sfv "$DOTFILES_DIR/vimrc" ~/.vimrc
 ln -sfv "$DOTFILES_DIR/vim" ~/.vim
 ln -sfv "$DOTFILES_DIR/tmux.conf" ~/.tmux.conf
 ln -sfv "$DOTFILES_DIR/zshrc" ~/.zshrc
+
+# Install submodules 
+git submodule init
+git submodule update
 
 # Cool message
 echo "Done installing!"
