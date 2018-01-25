@@ -3,7 +3,7 @@ syntax on
 filetype plugin indent on
 
 "Set the background dark and the colorscheme
-colorscheme one
+"colorscheme one
 set background=dark
 
 "Set tabs as spaces and auto indent
@@ -27,10 +27,3 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-
-"Shortcuts for notes repo
-nnoremap <Leader>nd 0wlrxwwi~~<Esc>A~~<Esc>0j
-nnoremap <Leader>nn o- [ ] 
-
-"Mapping for inserting date
-:nnoremap <F5> "=strftime("%a %d %b %Y")<CR>P
